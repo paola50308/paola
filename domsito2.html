@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Captura</title>
+      <link rel="stylesheet" href="domsito.css">
+  </head>
+<body>
+     <script src="domsito2s.js"></script>
+     <div id="cajal" class="form-container">
+
+     <h2>Captura de Datos</h2>
+     <form name="fdatos">
+          <label for="name">Nombre: </label>
+          <input type="text" id="name1" name="name" required>
+
+         <label for="age">Edad:</label>
+         <input type="number" id="edad1" name="age" required min="0"><br>
+
+        
+
+        <input type="radio" name="sexo" value="masculino" checked> masculino
+        <input type="radio" name="sexo" value="femenino" checked> femenino <br><br>
+        <label>pasatiempo favorito</label><br>
+         <input type="checkbox" id="depo1" value="dormir" onclick="seleccionar()"> dormir   
+         <input type="checkbox" id="depo2" value="bailar" onclick="seleccionar()"> bailar <br>
+
+        <br>
+        <br>
+        <label>estado civil</label><br>
+        <select name="estado" id="estadito">
+        <option value="0">seleccione</option>
+        <option value="soltero">soltero</option>
+        <option value="casado">casado</option>
+        <option value="corazon_dividido">corazon_dividido</option>
+
+        </select><br><br>
+        <input type="submit" value="Enviar" onclick="calcular()">
+
+    </form>
+  </div>
+</body>
+</html>
